@@ -1,0 +1,21 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #020617; }
+::-webkit-scrollbar-thumb { background: #06b6d4; border-radius: 10px; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.02em;
+    background-image: radial-gradient(circle at center, #0f172a 0%, #020617 100%);
+    min-height: 100vh;
+}
+
+/* Page Reveal Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+main, header {
+    animation: fadeIn 0.8s ease-out forwards;
+}
